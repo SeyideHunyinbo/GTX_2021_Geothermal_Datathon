@@ -10,55 +10,55 @@ Some oil and gas wells may show potentials of being converted into geothermal en
 
 The well data such as well logs, formation tops, production and drilling data are gathered for two basins; one in US and the other in Canada. The steps involved in solving the problem include the following:
 
-`Data Exploration`: Perform data wrangling anf exploratory data analysis
+* `Data Exploration`: Perform data wrangling anf exploratory data analysis
 
-`Feature Selection and Engineering`: Determine which attributes are suitable for developing accurate models. Are there new features that need to be derived from the existing one to improve our model performance?
+* `Feature Selection and Engineering`: Determine which attributes are suitable for developing accurate models. Are there new features that need to be derived from the existing one to improve our model performance?
 
-`Modeling`: Perform hyper-parameter tuning where necessary and use the wrangled datasets to develop the models for predicting true bottomhole temperatures.
+* `Modeling`: Perform hyper-parameter tuning where necessary and use the wrangled datasets to develop the models for predicting true bottomhole temperatures.
 
-`Model Deployment` : Save the models, wrap APIs around it and deploy in a production environment
+* `Model Deployment` : Save the models, wrap APIs around it and deploy in a production environment
 
-`Provide insights and recommendation`: Based on the model prediction results, provide practical insights and recommendations for tacking the challenge of retrofitting Oil & Gas wells into geothermal energy sources. Back it up with assumptions made for developing the solutions.
+* `Provide insights and recommendation`: Based on the model prediction results, provide practical insights and recommendations for tacking the challenge of retrofitting Oil & Gas wells into geothermal energy sources. Back it up with assumptions made for developing the solutions.
 
 # Variables
-`US Field` : Contain well IDs, true formation temperatures (from static well logs and from synthetic sources), bottomhole temperatures (measured during drilling), production data, drilling data, formation tops, well-logs, and well location data
+* `US Field` : Contain well IDs, true formation temperatures (from static well logs and from synthetic sources), bottomhole temperatures (measured during drilling), production data, drilling data, formation tops, well-logs, and well location data
 
-`Canada Field` : Contain well IDs, true formation temperatures (from static well logs and from synthetic sources), bottomhole temperatures (from DST), production data, drilling data (exluding mud-weight and time since circulation data), formation tops, well-logs, and well location data
+* `Canada Field` : Contain well IDs, true formation temperatures (from static well logs and from synthetic sources), bottomhole temperatures (from DST), production data, drilling data (exluding mud-weight and time since circulation data), formation tops, well-logs, and well location data
 
-`US Field` Mud Weight Data : EB_MW
+* `US Field` Mud Weight Data : EB_MW
 
-`US Field` Formation Tops Data : EB_FT
+* `US Field` Formation Tops Data : EB_FT
 
-`US Field` Well Headers : EB_WH
+* `US Field` Well Headers : EB_WH
 
-`US Field` Production Data : EB_PS
+* `US Field` Production Data : EB_PS
 
-`Canada Field` Formation Tops Data : DV_FT
+* `Canada Field` Formation Tops Data : DV_FT
 
-`Canada Field` Well Headers : DV_WH
+* `Canada Field` Well Headers : DV_WH
 
-`Canada Field` Production Data : DV_PS
+* `Canada Field` Production Data : DV_PS
 
 
 # Files
 This repo contains 7 files namely:
 
-`data_wrangling.py` : Python file for data wrangling
+* `data_wrangling.py` : Python file for data wrangling
 
-`modelling_main_duv_eag.py` : Python file fo model development
+* `modelling_main_duv_eag.py` : Python file fo model development
 
-`deploy_models_main.py` : Python file for model developing (scripting still ongoing)
+* `deploy_models_main.py` : Python file for model developing (scripting still ongoing)
 
 
-`regr_eag.pkl` : Linear model for US Field
+* `regr_eag.pkl` : Linear model for US Field
 
-`regr_duv.pkl` : Linear model for Canada Field
+* `regr_duv.pkl` : Linear model for Canada Field
 
-`xgb_tuned_eag.pkl` : Tuned XGBoost model for US Field
+* `xgb_tuned_eag.pkl` : Tuned XGBoost model for US Field
 
-`xgb_tuned_duv.pkl` : Tuned XGBoost model for Canada Field
+* `xgb_tuned_duv.pkl` : Tuned XGBoost model for Canada Field
 
-`NB` : The datasets (i.e. csv and xlsx files) are not provided as they are proprietary
+NB : The datasets (i.e. csv and xlsx files) are not provided as they are proprietary
 
 
 
