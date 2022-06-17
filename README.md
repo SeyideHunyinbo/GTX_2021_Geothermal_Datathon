@@ -10,7 +10,7 @@ Some oil and gas wells may show potentials of being converted into geothermal en
 
 The well data such as well logs, formation tops, production and drilling data are gathered for two basins; one in US and the other in Canada. The steps involved in solving the problem include the following:
 
-* `Data Exploration`: Perform data wrangling anf exploratory data analysis
+* `Data Exploration`: Perform data wrangling and exploratory data analysis
 
 * `Feature Selection and Engineering`: Determine which attributes are suitable for developing accurate models. Are there new features that need to be derived from the existing one to improve our model performance?
 
